@@ -17,7 +17,6 @@ colorscheme solarized
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :NERDTreeFind<CR>
-
+imap kj <esc>
 " For git, add spell checking and set wrapping to 72 chars "
 autocmd Filetype gitcommit setlocal spell textwidth=72
-
