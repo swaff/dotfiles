@@ -1,7 +1,23 @@
+set ruler
+set cursorline
 set number
+set tabstop=4 shiftwidth=4 expandtab
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
+call pathogen#infect()
+syntax on
+
+filetype plugin indent on
+
+syntax enable
+
+" Solarized stuff
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized
+
+map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeFind<CR>
+
+" For git, add spell checking and set wrapping to 72 chars "
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
