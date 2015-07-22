@@ -7,9 +7,7 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 syntax enable
 
-
 call plug#begin()
-Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'jelera/vim-javascript-syntax'
