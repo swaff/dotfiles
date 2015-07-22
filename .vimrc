@@ -5,7 +5,6 @@ set scrolloff=4 " Keep at least 4 lines below cursor
 set incsearch " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
-syntax enable
 
 call plug#begin()
 Plug 'scrooloose/nerdtree'
@@ -13,7 +12,12 @@ Plug 'kien/ctrlp.vim'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-cucumber'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
+
+syntax enable
+set background=dark
+colorscheme solarized
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :NERDTreeFind<CR>
