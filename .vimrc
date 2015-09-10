@@ -20,6 +20,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'bling/vim-airline'
 Plug 'mattn/emmet-vim'
+Plug 'fatih/vim-go'
 call plug#end()
 
 set t_Co=256
