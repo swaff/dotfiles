@@ -7,6 +7,7 @@ set ignorecase " case sensitive matching
 set smartcase " use case sensitive mathcing if the term has capitals
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
+set cursorline "Highlight the line the cursor is on"
 
 call plug#begin()
 Plug 'scrooloose/nerdtree'
