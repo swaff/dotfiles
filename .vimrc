@@ -22,6 +22,7 @@ Plug 'tpope/vim-commentary'
 Plug 'bling/vim-airline'
 Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go'
+Plug 'godlygeek/tabular'
 call plug#end()
 
 set t_Co=256
@@ -35,11 +36,15 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-m> :NERDTreeFind<CR>
 map <C-l> <C-w>l
 map <C-h> <C-w>h
-imap kj <esc>
+imap kj <esc>:write<CR>
 
 set complete=.,b,u,]
 set wildmode=longest,list:longest
 imap <Tab> <C-P>
+
+" CtrlP settings
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " For git, add spell checking and set wrapping to 72 chars "
 autocmd Filetype gitcommit setlocal spell textwidth=72

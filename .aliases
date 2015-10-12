@@ -1,1 +1,5 @@
 alias l="ls -laF"
+alias gk="grunt karma --keep-alive"
+alias gf="echo Yeeeeeehaaaaaaw!!!; grunt --fast --force"
+alias ginit="npm install; bundle install; grunt"
+alias gci="npm install; bundle install; grunt ci"
