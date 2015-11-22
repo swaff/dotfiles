@@ -23,6 +23,7 @@ Plug 'bling/vim-airline'
 Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
+Plug 'elixir-lang/vim-elixir'
 call plug#end()
 
 set t_Co=256
