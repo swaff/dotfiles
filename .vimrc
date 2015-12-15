@@ -9,6 +9,8 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set cursorline "Highlight the line the cursor is on"
 
+runtime macros/matchit.vim
+
 call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
@@ -49,3 +51,8 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " For git, add spell checking and set wrapping to 72 chars "
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+
+let mapleader = "\<Space>"
+
+map <Leader>b :CtrlPBuffer<CR>
