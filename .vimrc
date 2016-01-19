@@ -37,8 +37,10 @@ set winwidth=92
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :NERDTreeFind<CR>
-map <C-l> <C-w>l
 map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 imap kj <esc>:write<CR>
 
 set complete=.,b,u,]
@@ -51,8 +53,10 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " For git, add spell checking and set wrapping to 72 chars "
 autocmd Filetype gitcommit setlocal spell textwidth=72
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 
 let mapleader = "\<Space>"
 
 map <Leader>b :CtrlPBuffer<CR>
+map <Leader>json :% ! python -m json.tool<CR>
