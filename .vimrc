@@ -45,7 +45,6 @@ imap kj <esc>:write<CR>
 
 set complete=.,b,u,]
 set wildmode=longest,list:longest
-imap <Tab> <C-P>
 
 " CtrlP settings
 let g:ctrlp_switch_buffer = 0
