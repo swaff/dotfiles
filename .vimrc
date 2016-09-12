@@ -8,6 +8,7 @@ set smartcase " use case sensitive mathcing if the term has capitals
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set cursorline "Highlight the line the cursor is on"
+set relativenumber
 
 runtime macros/matchit.vim
 
@@ -26,6 +27,8 @@ Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'elixir-lang/vim-elixir'
+Plug 'digitaltoad/vim-pug'
+Plug 'vim-scripts/ReplaceWithRegister'
 call plug#end()
 
 set t_Co=256
@@ -58,4 +61,5 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 let mapleader = "\<Space>"
 
 map <Leader>b :CtrlPBuffer<CR>
+map <Leader>c :CtrlPClearCache<CR>
 map <Leader>json :% ! python -m json.tool<CR>
