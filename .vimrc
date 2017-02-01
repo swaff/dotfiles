@@ -29,6 +29,8 @@ Plug 'godlygeek/tabular'
 Plug 'elixir-lang/vim-elixir'
 Plug 'digitaltoad/vim-pug'
 Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'posva/vim-vue'
+Plug 'digitaltoad/vim-pug'
 call plug#end()
 
 set t_Co=256
@@ -57,6 +59,8 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 autocmd Filetype gitcommit setlocal spell textwidth=72
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
+
+set clipboard=unnamed
 
 let mapleader = "\<Space>"
 
